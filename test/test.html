@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test WeatherApi</title>
+</head>
+<body>
+    <main>
+        Weather Api
+        <h2 id="h2-temp"></h2>
+    </main>
+    <script>
+        function api(){
+            fetch(`http://api.weatherapi.com/v1/current.json?key=2423e02bedef401a98d14401242704&q=India`)
+            .then(res => res.json())
+            .then(data => console.log(data))
+            // Name .then(data => console.log(data.location.name))
+            // .then(data => console.log("Current Temperature Is" , + data.current.temp_c))
+        }
+        api();
+    </script>
+</body>
+</html>

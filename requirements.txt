@@ -1,4 +1,2 @@
-Html
-Css
-Javascript
-Weather Api By Open WeatherApi
+"HTML CSS JS 
+And Weather Api By OpenWeather Api"
